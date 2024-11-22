@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator & Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Calculator Section -->
+    <div class="container calc">
+        <h1 class="text-center">Calculator</h1>
+        <input class="input" type="text" id="calculatorInput" placeholder="0" readonly>
+        <div class="buttons">
+            <button class="ac" onclick="clr()">AC</button>
+            <button onclick="back()">⬅️</button>
+            <button onclick="dis('%')">%</button>
+            <button onclick="dis('/')">÷</button>
+            <button onclick="dis('√')">√</button>
+            <button onclick="dis('(')">(</button>
+            <button onclick="dis(')')">)</button>
+            <button onclick="dis('*')">×</button>
+            <button onclick="dis('7')">7</button>
+            <button onclick="dis('8')">8</button>
+            <button onclick="dis('9')">9</button>
+            <button onclick="dis('-')">-</button>
+            <button onclick="dis('4')">4</button>
+            <button onclick="dis('5')">5</button>
+            <button onclick="dis('6')">6</button>
+            <button onclick="dis('+')">+</button>
+            <button onclick="dis('1')">1</button>
+            <button onclick="dis('2')">2</button>
+            <button onclick="dis('3')">3</button>
+            <button onclick="dis('0')">0</button>
+            <button onclick="dis('.')">.</button>
+            <button class="equal" onclick="solve()">=</button>
+        </div>
+    </div>
+
+    <!-- Snake Game Section -->
+    <canvas id="snakeGame" class="hidden" width="400" height="400"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
